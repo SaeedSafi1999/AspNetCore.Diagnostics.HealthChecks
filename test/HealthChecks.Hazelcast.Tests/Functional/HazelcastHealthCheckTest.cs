@@ -24,7 +24,7 @@ public class HazelcastHealthCheckTests : IClassFixture<HazelcastFixture>
             {
                 op.Port = 5701;
                 op.Server = "localhost";
-                op.ClusterNames = new() { "dev" };
+                op.ClusterName = "dev";
             }, "hazelcast");
        })
        .Configure(app =>
