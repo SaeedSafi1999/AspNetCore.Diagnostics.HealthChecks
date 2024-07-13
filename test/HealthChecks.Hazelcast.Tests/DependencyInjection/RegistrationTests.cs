@@ -12,7 +12,7 @@ public class RegistrationTests
             {
                 op.Port = 5721;
                 op.Server = "localhost";
-                op.ClusterNames = new() { "dev" };
+                op.ClusterName = "dev";
             }, "hazelcast");
 
         using var serviceProvider = services.BuildServiceProvider();
